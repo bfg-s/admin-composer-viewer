@@ -1,0 +1,34 @@
+{
+    "name": "bfg/admin-composer-viewer",
+    "description": "Composer Viewer for bfg admin",
+    "type": "bfg-admin-extension",
+    "keywords": ["laravel", "bfg", "lte", "admin", "extension", "admin-composer-viewer"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xsaven",
+            "email": "gms.sw.xsaven@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0|^8.1",
+        "bfg/admin": "^5.5.2"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Admin\\Extend\\AdminComposerViewer\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admin\\Extend\\AdminComposerViewer\\ServiceProvider"
+            ]
+        }
+    }
+}
